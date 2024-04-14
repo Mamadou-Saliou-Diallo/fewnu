@@ -267,11 +267,12 @@ a{
     margin-top: 6%;
 }
 .wast{
-    margin-left: 70%;
+    margin-left: 75%;
+    position: fixed;
+    font-size: 50px;
+    margin-top: 30%;
 }
-.fa-brands fa-whatsapp whatsapp-image{
-    width: 400px;
-}
+
 .milieu2-2{
     width: 50%;
     height: 70%;
@@ -425,64 +426,32 @@ align-items: center;
     color: #0BCAD4;
 }
 .slider1{
-    width: 100%s;
+    width: 200px;
+    overflow: hidden;
+    margin: 10px auto;
 }
 .container-slider{
-    display: flex;
-    width: 100%;
-    animation-duration: 5s;
-    animation-name: mesSlider;
-    animation-iteration-count: infinite;
+    width: calc(200px *4);
+    animation: mesSlider 5s infinite;
 }
 @keyframes mesSlider{
     0%{
         transform: translateX(0%);
     }
-    10%{
-        transform: translateX(0%);
+    23%{
+        transform: translateX(-300px);
     }
-    25%{
-        transform: translateX(20%);
+    43%{
+        transform: translateX(-600px);
     }
-    35%{
-        transform: translateX(20%);
+    73%{
+        transform: translateX(-800px);
     }
-    50%{
-        transform: translateX(50%);
+    100%{
+        transform: translateX(0);
     }
-    60%{
-        transform: translateX(50%);
-    }
-    75%{
-        transform: translateX(80%);
-    }
-    85%{
-        transform: translateX(80%);
-    } 
-    0%{
-        transform: translateX(-0%);
-    }
-    10%{
-        transform: translateX(-0%);
-    }
-    25%{
-        transform: translateX(-20%);
-    }
-    35%{
-        transform: translateX(-20%);
-    }
-    50%{
-        transform: translateX(-50%);
-    }
-    60%{
-        transform: translateX(-50%);
-    }
-    75%{
-        transform: translateX(80%);
-    }
-    85%{
-        transform: translateX(80%);
-    } 
+    
+     
 }
 
 .footer{
@@ -660,7 +629,7 @@ header{
     }
     header{
         display: flex;
-        width: 100%;
+        width: 50%;
         height: 40px;
         background-color: black;
         margin-top: -5%;
@@ -679,16 +648,15 @@ header{
         justify-content: center;
         font-size: 10px;
         color: white;
-        background-size: cover;
-        justify-content: space-around;
     }
     .main-principal{
         display: flex;
-        width: 100%;
+        width: 100vh;
         height: 600px;
         background-image: url("images/bg-budget.png");
         color: white;
         padding: 3%;
+        font-size: 10px;
     }
     .main-droite{
         display: flex;
@@ -702,7 +670,7 @@ header{
         align-items: center;
         margin-top: 5%;
         gap: 20px;
-        width: 60%;
+        width: 30%;
         height: 65px;
     }
     .arrowe{
@@ -710,11 +678,16 @@ header{
         align-items: center;
         justify-content: center;
         background-color: #009688;
-        width: 55%;
+        width: 30%;
         height: 65px ;
         border-radius: 47%;
     }
-
+    .wast{
+        margin-left: 80%;
+        position: fixed;
+        font-size: 50px;
+        margin-top: 40%;
+    }
     .present{
         text-decoration: none;
         font-size: 20px;
@@ -742,6 +715,15 @@ header{
     }
     .paragraphe{
         margin-top: -0%;
+    }
+    .milieu-droite{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .fille{
+        margin-right: 100%;
     }
     
     .milieu-gauche{
@@ -806,9 +788,11 @@ header{
 .milieu4{
     display: flex;
     flex-direction: column;
-    padding-left: 8%;
+    padding: 0;
+    margin: 0;
 }
 .milieu4-droite{
+   margin: 0;
     width: 100%;
 }
 .milieu4-gauche{
