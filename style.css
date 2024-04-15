@@ -550,7 +550,8 @@ transform: translateX();
 }
 
 header{
-	height: 62px;
+	height: 22px;
+    overflow-x: hidden;
 }
 .menu2, .rond div{
 	display: none;
